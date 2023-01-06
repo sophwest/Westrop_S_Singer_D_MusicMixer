@@ -18,7 +18,8 @@ Singer, Dan
 
 ## History
 
-01/06/23- Created repo and readme  
+***01/06/23 (Sophia)***- Created repo  
+***01/06/23 (Dan)***- Created readme, files, folders, and added image  
 
 ## Credits
 
@@ -29,3 +30,5 @@ Singer, Dan- Co-Author
 ## License
 
 MIT
+
+![Furret Walking](images/furret_walk.gif)  
