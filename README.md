@@ -24,7 +24,8 @@ Singer, Dan
 
 ***01/06/23 (Sophia)***- Created repo  
 ***01/06/23 (Dan)***- Created readme, files, folders, and added image  
-***01/21/23 (Dan)***- Added pixel icons to project
+***01/21/23 (Dan)***- Added pixel icons to project  
+***01/26/23 (Sophia)***- Added pokeball svg's and ai working file to assets  
 
 ## Credits
 
