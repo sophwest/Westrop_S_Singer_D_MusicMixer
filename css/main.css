@@ -57,6 +57,34 @@ a:visited {
 
 /* Main */
 
+#Pokemon {
+    grid-column: 1/-1;
+}
+
+#Pokemon img {
+    height: 150px;
+}
+
+#Mudkip {
+    grid-column: 1/4;
+    text-align: center;
+}
+
+#Ralts {
+    grid-column: 4/7;
+    text-align: center;
+}
+
+#Jirachi {
+    grid-column: 7/10;
+    text-align: center;
+}
+
+#Skitty {
+    grid-column: 10/-1;
+    text-align: center;
+}
+
 /* Bag */
 
 #bag_menu {
