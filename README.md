@@ -27,7 +27,7 @@ Singer, Dan
 ***01/21/23 (Dan)***- Added pixel icons to project  
 ***01/26/23 (Sophia)***- Added pokeball svg's and ai working file to assets  
 ***02/02/23 (Dan)***- Added in basic elements and styled them  
-***02/05/23 (Dan)***- Attempted to add javascript to the sprites
+***02/05/23 (Dan)***- Added javascript to the sprites, added the Pokeballs with javascript, did a bit of spacing and styling for the elements  
 
 ## Credits
 
@@ -43,6 +43,6 @@ Certain materials are included under fair use exemption of the U.S. Copyright La
 
 ## License
 
-MIT
+MIT  
 
 ![Furret Walking](images/furret_walk.gif)  
