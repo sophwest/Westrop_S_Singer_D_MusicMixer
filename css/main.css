@@ -15,6 +15,8 @@
     font-size: 30px;
     font-weight: bold;
     color: #fecd0a;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 
 p {
@@ -53,6 +55,27 @@ a:visited {
     border: 1px solid black;
     text-align: center;
     border-radius: 5px;
+    height: 25px;
+}
+
+#reset_button p {
+    padding-top: 3.5px;
+}
+
+#play_button {
+    grid-column: 3/4;
+}
+
+#play_button img {
+    height: 25px;
+}
+
+#pause_button {
+    grid-column: 4/5;
+}
+
+#pause_button img {
+    height: 25px;
 }
 
 /* Main */
@@ -62,7 +85,7 @@ a:visited {
 }
 
 #Pokemon img {
-    height: 150px;
+    height: 250px;
 }
 
 #Mudkip {
@@ -92,14 +115,52 @@ a:visited {
     grid-column: 1/-1;
 }
 
+/* Feel free to change the measurements if you think something works better! My measurements are just temporary for the time being! */
+
 #left_side {
     border: 1px solid black;
     grid-column: 1/4;
+}
+
+#left_side p {
+    border: 1px solid black;
+    padding-right: 10px;
     text-align: right;
 }
 
+#ball_icon {
+    height: 50px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 #description {
-    text-align: left;
+    text-align: left!important;
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#pokeballs {
+    border: 1px solid black;
+    grid-column: 5/-1;
+}
+
+#row1 {
+    display: inline;
+}
+
+#row1 img {
+    margin-bottom: 15px;
+}
+
+#row1 img, #row2 img {
+    height: 100px;
+    padding-left: 32px;
 }
 
 /* Footer */
