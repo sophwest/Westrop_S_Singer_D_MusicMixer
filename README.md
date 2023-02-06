@@ -27,6 +27,7 @@ Singer, Dan
 ***01/21/23 (Dan)***- Added pixel icons to project  
 ***01/26/23 (Sophia)***- Added pokeball svg's and ai working file to assets  
 ***02/02/23 (Dan)***- Added in basic elements and styled them  
+***02/05/23 (Dan)***- Attempted to add javascript to the sprites
 
 ## Credits
 
