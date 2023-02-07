@@ -80,30 +80,30 @@ a:visited {
 
 /* Main */
 
-#Pokemon {
+#pokemon {
     grid-column: 1/-1;
 }
 
-#Pokemon img {
+#pokemon svg {
     height: 250px;
 }
 
-#Mudkip {
+#mudkip-div {
     grid-column: 1/4;
     text-align: center;
 }
 
-#Ralts {
+#ralts-div {
     grid-column: 4/7;
     text-align: center;
 }
 
-#Jirachi {
+#jirachi-div {
     grid-column: 7/10;
     text-align: center;
 }
 
-#Skitty {
+#skitty-div {
     grid-column: 10/-1;
     text-align: center;
 }
@@ -154,11 +154,11 @@ a:visited {
     display: inline;
 }
 
-#row1 img {
+#row1 svg {
     margin-bottom: 15px;
 }
 
-#row1 img, #row2 img {
+#row1 svg, #row2 svg {
     height: 100px;
     padding-left: 32px;
 }
