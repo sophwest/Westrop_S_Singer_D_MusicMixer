@@ -1,9 +1,9 @@
 console.log('Welcome to the musical world of Pokemon')
 
 //Target
-let pokemonSprites = document.querySelectorAll ('#Pokemon div');
-let ballSprites = document.querySelectorAll ('#row1 img');
-let ballSprites2 = document.querySelectorAll ('#row2 img');
+let pokemonSprites = document.querySelectorAll ('#pokemon div svg');
+let ballSprites = document.querySelectorAll ('#row1 svg');
+let ballSprites2 = document.querySelectorAll ('#row2 svg');
 
 //Action
 function LogID (){
