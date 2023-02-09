@@ -28,6 +28,7 @@ Singer, Dan
 ***01/26/23 (Sophia)***- Added pokeball svg's and ai working file to assets  
 ***02/02/23 (Dan)***- Added in basic elements and styled them  
 ***02/05/23 (Dan)***- Added javascript to the sprites, added the Pokeballs with javascript, did a bit of spacing and styling for the elements  
+***02/08/23 (Sophia)***- Sketched out draft of final design, added a few inspo pictures and final design rough drawing
 
 ## Credits
 
