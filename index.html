@@ -21,11 +21,11 @@
                 </a></div>
 <!-- Added buttons, feel free to style them as you please-->
                 <div id="play_button">
-                    <img src="images/play.svg">
+                    <img src="images/play.svg" alt="Play Button">
                 </div>
 
                 <div id="pause_button">
-                    <img src="images/pause.svg">
+                    <img src="images/pause.svg" alt="Pause Button">
                 </div>
             </section>
         </header>
@@ -33,7 +33,7 @@
         <section id="main">
             <h2 class="hidden"> Main Section</h2>
             <div id="pokemon" class="grid">
-                <div id="mudkip-div">
+                <div class="pokemon" id="mudkip-div">
                     <svg id="mudkip" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.49 160.6">
                     <defs>
                         <style>
@@ -70,7 +70,7 @@
                     <path id="lightblue_mudkip" class="cls-5-mudkip" d="M75.57,132.26h-9.45v-9.45h9.45v9.45Zm9.45-9.45h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm56.68-37.79h-9.45v9.45h9.45v-9.45Zm-9.45-18.89h-9.45v9.45h9.45v-9.45Zm9.45,9.45h-9.45v9.45h9.45v-9.45Zm0-18.89h-9.45v9.45h9.45v-9.45Zm9.45,9.45h-9.45v9.45h9.45v-9.45Zm0-18.89h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm0,28.34h-9.45v9.45h9.45v-9.45Zm0-9.45h-9.45v9.45h9.45v-9.45Z"/>
                     </svg>
                 </div>
-                <div id="ralts-div">
+                <div class="pokemon" id="ralts-div">
                     <svg id="ralts" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.36 179.49">
                         <defs>
                           <style>
@@ -102,7 +102,7 @@
                         <path id="red_ralts" class="cls-5-ralts" d="M18.89,18.89H9.45V9.45h9.45v9.45Zm9.45-9.45h-9.45v9.45h9.45V9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0H9.45v9.45h9.45v-9.45Zm28.34,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm28.34,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-9.45,9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm18.89,0h-9.45v9.45h9.45v-9.45Zm-9.45,9.45h-9.45v9.45h9.45v-9.45Z"/>
                       </svg>
                 </div>
-                <div id="jirachi-div">
+                <div class="pokemon" id="jirachi-div">
                     <svg id="jirachi" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.43 179.49">
                         <defs>
                           <style>
@@ -134,7 +134,7 @@
                         <path id="blue_jirachi" class="cls-5-jirachi" d="M56.68,18.89h-9.45V9.45h9.45v9.45Zm0,0h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45ZM18.89,56.68H9.45v9.45h9.45v-9.45Zm0,9.45H9.45v9.45h9.45v-9.45Zm0,9.45H9.45v9.45h9.45v-9.45Zm151.05,9.45h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Z"/>
                       </svg>
                 </div>
-                <div id="skitty-div">
+                <div class="pokemon" id="skitty-div">
                     <svg id="skitty" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188.94 188.94">
                         <defs>
                           <style>
@@ -186,6 +186,7 @@
             <h2 class="hidden">Bag</h2>
             <div id="bag_menu" class="grid">
                 <section id="left_side">
+                    <h2 class="hidden">Preview Screen</h2>
                     <p class="title">Pokeballs</p>
 <!-- Feel free to change this Pokeball icon to yours if you please; just temporary -->
                     <img id="ball_icon" src="images/pokeball.svg">
@@ -197,7 +198,8 @@
                 <h2 class="hidden">Balls</h2>
                 <div id="ball_selection">
                     <section id="row1">
-                        <svg id="pokeball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
+                          <h2 class="hidden">First Row</h2>
+                          <svg class="ball" data-key="004" id="pokeball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                             <defs>
                               <style>
                                 .cls-1-pokeball {
@@ -232,7 +234,7 @@
                             <path id="red_poke" class="cls-2-pokeball" d="M56.68,18.89h-9.45V9.45h9.45v9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm-56.68,0h-9.45v9.45h9.45v-9.45Zm9.45,37.79h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm0-9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm9.45-9.45h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm0-9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-47.23,0h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45ZM66.13,9.45h-9.45v9.45h9.45V9.45Zm9.45,0h-9.45v9.45h9.45V9.45Zm9.45,0h-9.45v9.45h9.45V9.45Zm9.45,0h-9.45v9.45h9.45V9.45Zm9.45,9.45h-9.45v9.45h9.45v-9.45Zm9.45,9.45h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm-9.45,9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Z"/>
                             <path id="lightred_poke" class="cls-5-pokeball" d="M47.23,28.34h-9.45v-9.45h9.45v9.45Zm9.45-9.45h-9.45v9.45h9.45v-9.45Zm-18.89,9.45h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm9.45,9.45h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45-9.45h-9.45v9.45h9.45v-9.45Zm0-9.45h-9.45v9.45h9.45v-9.45Z"/>
                           </svg>
-                          <svg id="great_ball" data-name="Great Ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
+                          <svg class="ball" data-key="003" id="great_ball" data-name="Great Ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                             <defs>
                               <style>
                                 .cls-1-great {
@@ -282,7 +284,7 @@
                             <path id="red_great" class="cls-3-great" d="M28.34,47.23h-9.45v-9.45h9.45v9.45Zm0,9.45h-9.45v9.45h9.45v-9.45ZM113.36,28.34h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Z"/>
                             <path id="darkred_great" class="cls-4-great" d="M9.45,56.68v-9.45h9.45v9.45H9.45Zm9.45,9.45v-9.45H9.45v9.45h9.45Zm103.91-28.34v-9.45h-9.45v9.45h9.45Zm0,9.45v-9.45h-9.45v9.45h9.45Zm0,9.45v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm0-9.45v-9.45h-9.45v9.45h9.45Zm-18.89,9.45v-9.45h-9.45v9.45h9.45Zm-9.45,9.45v-9.45h-9.45v9.45h9.45Zm0,9.45v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm0-9.45v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45ZM28.34,47.23h-9.45v9.45h9.45v-9.45Z"/>
                           </svg>
-                          <svg id="ultra_ball" data-name="Ultra Ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
+                          <svg class="ball" data-key="002" id="ultra_ball" data-name="Ultra Ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                             <defs>
                               <style>
                                 .cls-1-ultra {
@@ -327,7 +329,7 @@
                             <path id="tan_ultra" class="cls-6-ultra" d="M47.23,56.68h-9.45v-9.45h9.45v9.45Zm9.45-9.45h-9.45v9.45h9.45v-9.45Zm9.45-9.45h-9.45v9.45h9.45v-9.45Zm0-9.45h-9.45v9.45h9.45v-9.45Zm-28.34,28.34h-9.45v9.45h9.45v-9.45Z"/>
                             <path id="brown_ultra" class="cls-8-ultra" d="M113.36,47.23v-9.45h9.45v9.45h-9.45Zm9.45,9.45v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm-47.23,18.89v-9.45h-9.45v9.45h9.45Zm0,9.45v-9.45h-9.45v9.45h9.45Zm-9.45-9.45v-9.45h-9.45v9.45h9.45Zm37.79,0v-9.45h-9.45v9.45h9.45Zm0-9.45v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm-9.45,9.45v-9.45h-9.45v9.45h9.45ZM47.23,56.68h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm0-9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm9.45-9.45h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm-9.45-9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Z"/>
                           </svg>
-                          <svg id="premier_ball" data-name="Premier Ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
+                          <svg class="ball" data-key="012" id="premier_ball" data-name="Premier Ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                             <defs>
                               <style>
                                 .cls-1-premier {
@@ -362,7 +364,7 @@
                             <path id="grey_premier" class="cls-1-premier" d="M9.45,66.13v-9.45h9.45v9.45H9.45Zm75.57,18.89v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm-28.34-9.45v-9.45h-9.45v9.45h9.45Zm37.79,0v-9.45h-9.45v9.45h9.45Zm18.89-9.45v-9.45h-9.45v9.45h9.45Zm-9.45,9.45v-9.45h-9.45v9.45h9.45Zm-37.79,28.34v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm18.89,0h-9.45v9.45h9.45v-9.45Zm-47.23,18.89h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm-28.34,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-9.45-47.23h-9.45v9.45h9.45v-9.45Zm18.89,0h-9.45v9.45h9.45v-9.45Zm0,18.89h-9.45v9.45h9.45v-9.45Zm-18.89,0h-9.45v9.45h9.45v-9.45Zm-9.45,18.89h-9.45v9.45h9.45v-9.45Zm-9.45-9.45h-9.45v9.45h9.45v-9.45Zm75.57,9.45h-9.45v9.45h9.45v-9.45Zm9.14,0h-9.45v9.45h9.45v-9.45Zm-46.92-56.68h-9.45v9.45h9.45v-9.45Zm9.45,47.23h-9.45v9.45h9.45v-9.45Zm-9.45,9.45h-9.45v9.45h9.45v-9.45Z"/>
                             <path id="eggwhite_premier" class="cls-3-premier" d="M9.45,56.68v-9.45h9.45v9.45H9.45Zm28.34,18.89v-9.45h-9.45v9.45h9.45ZM113.36,28.34v-9.45h-9.45v9.45h9.45Zm9.45,9.45v-9.45h-9.45v9.45h9.45Zm0,9.45v-9.45h-9.45v9.45h9.45Zm0,9.45v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm-18.89,0v-9.45h-9.45v9.45h9.45Zm-9.45,9.45v-9.45h-9.45v9.45h9.45Zm-18.89,9.45v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm9.45-9.45v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm0,18.89h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm9.45-9.45h-9.45v9.45h9.45v-9.45Zm-28.34,18.89h-9.45v9.45h9.45v-9.45Zm-9.45,9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-47.23-9.45h-9.45v9.45h9.45v-9.45Zm75.57,0h-9.45v9.45h9.45v-9.45ZM56.68,9.45h-9.45v9.45h9.45V9.45Zm-18.89,9.45h-9.45v9.45h9.45v-9.45Zm9.45,37.79h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45ZM28.34,28.34h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm0,18.89h-9.45v9.45h9.45v-9.45ZM94.47,9.45h-9.45v9.45h9.45V9.45Zm9.45,9.45h-9.45v9.45h9.45v-9.45Zm9.45,9.45h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm0,56.68h-9.45v9.45h9.45v-9.45Zm-18.89,9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-9.45,9.45h-9.45v9.45h9.45v-9.45Zm-18.89,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-28.34-28.34H9.45v9.45h9.45v-9.45Zm9.45,9.45h-9.45v9.45h9.45v-9.45Z"/>
                           </svg>
-                          <svg id="master_ball" data-name="Master Ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
+                          <svg class="ball" data-key="001" id="master_ball" data-name="Master Ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                             <defs>
                               <style>
                                 .cls-1-master {
@@ -415,7 +417,8 @@
                     </section>
     
                     <section id="row2">
-                        <svg id="dusk_ball" data-name="Dusk Ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
+                          <h2 class="hidden">Second Row</h2>
+                          <svg class="ball" data-key="013" id="dusk_ball" data-name="Dusk Ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                             <defs>
                               <style>
                                 .cls-1-dusk {
@@ -465,7 +468,7 @@
                             <path id="grey_dusk" class="cls-9-dusk" d="M18.89,75.57v-9.45h9.45v9.45h-9.45ZM113.36,28.34v-9.45h-9.45v9.45h9.45Zm-18.89,37.79v-9.45h-9.45v9.45h9.45Zm0,9.45v-9.45h-9.45v9.45h9.45Zm9.45,28.34h-9.45v9.45h9.45v-9.45Zm-18.89,9.45h-9.45v9.45h9.45v-9.45Zm-9.45,9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-28.34-18.89h-9.45v9.45h9.45v-9.45Zm84.71,9.45h-9.45v9.45h9.45v-9.45ZM37.79,18.89h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm37.79,9.45h-9.45v9.45h9.45v-9.45Zm0-9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm37.79-9.45h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm0-9.45h-9.45v9.45h9.45v-9.45ZM28.34,47.23h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45ZM113.36,28.34h-9.45v9.45h9.45v-9.45Zm-9.45,18.89h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Z"/>
                             <path id="darkgray_dusk" class="cls-1-dusk" d="M9.45,56.68v-9.45h9.45v9.45H9.45Zm113.36-18.89v-9.45h-9.45v9.45h9.45Zm-18.89,28.34v-9.45h-9.45v9.45h9.45Zm-9.45,18.89v-9.45h-9.45v9.45h9.45Zm0,28.34h-9.45v9.45h9.45v-9.45Zm-9.45,9.45h-9.45v9.45h9.45v-9.45Zm24.52,0h-9.45v9.45h9.45v-9.45Zm-71.76-9.45h-9.45v9.45h9.45v-9.45Zm66.13,0h-9.45v9.45h9.45v-9.45ZM28.34,28.34h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm0,18.89h-9.45v9.45h9.45v-9.45Zm85.02-18.89h-9.45v9.45h9.45v-9.45Zm-18.89,66.13h-9.45v9.45h9.45v-9.45Zm-66.13-9.45h-9.45v9.45h9.45v-9.45Z"/>
                           </svg>
-                          <svg id="quick_ball" data-name="Quick Ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
+                          <svg class="ball" data-key="015" id="quick_ball" data-name="Quick Ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                             <defs>
                               <style>
                                 .cls-1-quick {
@@ -510,7 +513,7 @@
                             <path id="yellow_quick" class="cls-3-quick" d="M103.91,28.34v-9.45h9.45v9.45h-9.45Zm18.89,9.45v-9.45h-9.45v9.45h9.45ZM37.79,18.89h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm9.45,18.89h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45-9.45h-9.45v9.45h9.45v-9.45Zm9.45-9.45h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm0-9.45h-9.45v9.45h9.45v-9.45Zm-75.57,0h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45ZM113.36,28.34h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm-18.89,9.45h-9.45v9.45h9.45v-9.45Z"/>
                             <path id="gold_quick" class="cls-1-quick" d="M18.89,75.57v-9.45h9.45v9.45h-9.45Zm18.89,0v-9.45h-9.45v9.45h9.45Zm85.02-28.34v-9.45h-9.45v9.45h9.45Zm-9.45,9.45v-9.45h-9.45v9.45h9.45Zm-18.89,9.45v-9.45h-9.45v9.45h9.45Zm-9.45,9.45v-9.45h-9.45v9.45h9.45Zm0,9.45v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm-18.89-9.45v-9.45h-9.45v9.45h9.45Zm18.89,37.79h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,9.45h-9.45v9.45h9.45v-9.45Zm-37.79,0h-9.45v9.45h9.45v-9.45Zm-18.89-9.45h-9.45v9.45h9.45v-9.45Zm-9.45-9.45h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm66.13,9.45h-9.45v9.45h9.45v-9.45Zm9.14,0h-9.45v9.45h9.45v-9.45Zm-28.03-56.68h-9.45v9.45h9.45v-9.45Zm-47.23,0h-9.45v9.45h9.45v-9.45Zm66.13-9.45h-9.45v9.45h9.45v-9.45Zm-9.45,56.68h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-18.89-18.89h-9.45v9.45h9.45v-9.45Z"/>
                           </svg>
-                          <svg id="dive_ball" data-name="Dive Ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
+                          <svg class="ball" data-key="007" id="dive_ball" data-name="Dive Ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                             <defs>
                               <style>
                                 .cls-1-dive {
@@ -545,7 +548,7 @@
                             <path id="blue_dive" class="cls-4-dive" d="M9.45,56.68v-9.45h9.45v9.45H9.45Zm9.45,9.45v-9.45H9.45v9.45h9.45Zm9.45,9.45v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm85.02-18.89v-9.45h-9.45v9.45h9.45Zm-37.79,18.89v-9.45h-9.45v9.45h9.45Zm-9.45,0v-9.45h-9.45v9.45h9.45Zm18.89,0v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm9.45-9.45v-9.45h-9.45v9.45h9.45Zm-66.13-9.45h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm0-9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm28.34,56.68h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-18.89,9.45h-9.45v9.45h9.45v-9.45Zm-37.79-28.34H9.45v9.45h9.45v-9.45Zm9.45,9.45h-9.45v9.45h9.45v-9.45Z"/>
                             <path id="darkblue_dive" class="cls-1-dive" d="M122.81,56.68v-9.45h9.45v9.45h-9.45Zm-37.79,28.34v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm9.45-9.45v-9.45h-9.45v9.45h9.45Zm9.45-9.45v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm-9.45,9.45v-9.45h-9.45v9.45h9.45Zm0,18.89h-9.45v9.45h9.45v-9.45Zm9.45-9.45h-9.45v9.45h9.45v-9.45Zm-9.45,18.89h-9.45v9.45h9.45v-9.45Zm-18.89,0h-9.45v9.45h9.45v-9.45Zm-9.45,9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-9.45,9.45h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm-28.34,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-18.89-9.45h-9.45v9.45h9.45v-9.45Zm-9.45-9.45h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm66.13,9.45h-9.45v9.45h9.45v-9.45Zm9.14,0h-9.45v9.45h9.45v-9.45Zm.31-9.45h-9.45v9.45h9.45v-9.45Zm0-9.45h-9.45v9.45h9.45v-9.45Zm-18.89,9.45h-9.45v9.45h9.45v-9.45Zm-18.89,9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-18.89,0h-9.45v9.45h9.45v-9.45Z"/>
                           </svg>
-                          <svg id="friend_ball" data-name="Friend Ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
+                          <svg class="ball" data-key="497" id="friend_ball" data-name="Friend Ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                             <defs>
                               <style>
                                 .cls-1-friend {
@@ -590,7 +593,7 @@
                             <path id="yellow_friend" class="cls-4-friend" d="M56.68,47.23h-9.45v-9.45h9.45v9.45Zm9.45-9.45h-9.45v9.45h9.45v-9.45Zm0-9.45h-9.45v9.45h9.45v-9.45Z"/>
                             <path id="red_friend" class="cls-7-friend" d="M94.47,66.13v-9.45h9.45v9.45h-9.45Zm0,0v-9.45h-9.45v9.45h9.45Zm-9.45,9.45v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45ZM37.79,28.34h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm37.79,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm0-9.45h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm0-9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45ZM28.34,47.23h-9.45v9.45h9.45v-9.45Zm9.45,9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Z"/>
                           </svg>
-                          <svg id="dream_ball" data-name="Dream Ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
+                          <svg class="ball" data-key="240" id="dream_ball" data-name="Dream Ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                             <defs>
                               <style>
                                 .cls-1-dream {
@@ -650,6 +653,17 @@
             <h2 class="hidden">Footer</h2>
         </footer>
     </div>
+
+    <audio data-key="001" src="audio/master_legendary.mp3"></audio>
+    <audio data-key="002" src="audio/ultra_lilycove.mp3"></audio>
+    <audio data-key="003" src="audio/great_surf.mp3"></audio>
+    <audio data-key="004" src="audio/pokeball_title.mp3"></audio>
+    <audio data-key="007" src="audio/dive_dive.mp3"></audio>
+    <audio data-key="012" src="audio/premier_meteor_falls.mp3"></audio>
+    <audio data-key="013" src="audio/dusk_fallarbor.mp3"></audio>
+    <audio data-key="015" src="audio/quick_route104.mp3"></audio>
+    <audio data-key="240" src="audio/dream_contest.mp3"></audio>
+    <audio data-key="497" src="audio/friend_littleroot.mp3"></audio>
 
     <script src="js/main.js"></script>
 </body>
