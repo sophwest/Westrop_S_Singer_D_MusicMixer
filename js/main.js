@@ -6,8 +6,7 @@ let ballSprites = document.querySelectorAll ('#row1 svg');
 let ballSprites2 = document.querySelectorAll ('#row2 svg');
 let allBalls = document.querySelectorAll('.ball');
 let allPokemon = document.querySelectorAll ('.pokemon');
-let dragBall = document.querySelectorAll ('#row1 div')
-let dragBall2 = document.querySelectorAll ('#row2 div')
+let dragBall = document.querySelectorAll ('.draggable');
 let playButton = document.querySelector("#play-button");
 let pauseButton = document.querySelector("#pause-button");
 // let resetButton = document.querySelector("#reset-button");
@@ -23,9 +22,8 @@ function LogID2 (){
 }
 
 function findMatchingAudio(event) {
-    let audioClip = document.querySelectorAll('audio[data-key]')[0], 
-    targetDiv = document.querySelectorAll('div[data-key]')[0];
-
+    let audioClip = document.querySelector(`audio[data-key="${draggedBall.dataset.key}"]`), 
+    targetDiv = document.querySelector(`div[data-key="${draggedBall.dataset.key}"]`);
     if (!audioClip) {return;}
     audioClip.currentTime = 0;
     audioClip.play();
@@ -47,10 +45,6 @@ function resetSvgs() {
 
 function DragID(){
     console.log('Drag');
-}
-
-function DragID2(){
-    console.log('Drag');
     draggedBall = this;
 }
 
@@ -66,14 +60,14 @@ function handleDrop(e){
 }
 
 function playTrack() {
-    let audioClip = document.querySelectorAll('audio[data-key]')[0], 
-    targetDiv = document.querySelectorAll('div[data-key]')[0]; 
+    let audioClip = document.querySelector(`audio[data-key="${draggedBall.dataset.key}"]`), 
+    targetDiv = document.querySelector(`div[data-key="${draggedBall.dataset.key}"]`);
     audioClip.play();
 }
 
 function pauseTrack() {
-    let audioClip = document.querySelectorAll('audio[data-key]')[0], 
-    targetDiv = document.querySelectorAll('div[data-key]')[0];
+    let audioClip = document.querySelector(`audio[data-key="${draggedBall.dataset.key}"]`), 
+    targetDiv = document.querySelector(`div[data-key="${draggedBall.dataset.key}"]`);
     audioClip.pause();
 }
 
@@ -88,7 +82,6 @@ pokemonSprites.forEach(sprite => sprite.addEventListener('click', LogID));
 ballSprites.forEach(ball => ball.addEventListener('click', LogID2));
 ballSprites2.forEach(ball => ball.addEventListener('click', LogID2));
 dragBall.forEach(ball => ball.addEventListener('dragstart', DragID));
-dragBall2.forEach(ball => ball.addEventListener('dragstart', DragID2));
 window.addEventListener('drop', findMatchingAudio);
 allBalls.forEach(svg => svg.addEventListener('transitionend', resetSvgs));
 // allPokemon.forEach (div => div.addEventListener ('drop', movePokemon));
