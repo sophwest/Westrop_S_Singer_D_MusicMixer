@@ -49,7 +49,7 @@ a:visited {
 
 /* Header */
 
-#now_playing_bar {
+#now-playing-bar {
     grid-column: 1/5;
     border: 5px solid #3d3d3d;
     border-radius: 10px;
@@ -60,18 +60,18 @@ a:visited {
     margin-top: 20px;
 }
 
-#now_playing_bar div {
+#now-playing-bar div {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     margin-left: 90px;
 }
 
-#now_playing_bar div:first-of-type {
+#now-playing-bar div:first-of-type {
     margin-left: 0px;
 }
 
-#reset_button {
+#reset-button {
     /* grid-column: 1/2; */
     border: 3px solid #3d3d3d;
     text-align: center;
@@ -81,40 +81,40 @@ a:visited {
     transition: all 0.2s ease-in-out;
 }
 
-#reset_button:active {
+#reset-button:active {
     transform: scale(1.1);
 }
 
-#reset_button p {
+#reset-button p {
     padding: 5px;
     font-family: 'Cabin', sans-serif;
     font-weight: 700;
     cursor: pointer;
 }
 
-#play_button {
+#play-button {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 
-#play_button:active {
+#play-button:active {
     transform: scale(1.2);
 }
 
-#play_button img {
+#play-button img {
     height: 25px;
 }
 
-#pause_button {
+#pause-button {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 
-#pause_button:active {
+#pause-button:active {
     transform: scale(1.2);
 }
 
-#pause_button img {
+#pause-button img {
     height: 25px;
 }
 
@@ -157,7 +157,7 @@ a:visited {
     margin-top: 50px;
 }
 
-#left_side {
+#left-side {
     border: 5px solid #3d3d3d;
     grid-column: 1/5;
     padding: 20px;
@@ -172,7 +172,7 @@ a:visited {
     background-color: #fffccd;
 }
 
-#ball_icon {
+#ball-icon {
     height: 50px;
     border: 3px solid #3d3d3d;
     padding: 10px;
