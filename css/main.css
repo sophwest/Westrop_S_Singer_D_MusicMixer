@@ -2,6 +2,8 @@
 
 body {
     background-image: url(../images/background.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .hidden {
@@ -60,7 +62,7 @@ a:visited {
     background-color: #fffccd;
     padding: 10px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     margin-top: 20px;
 }
 
@@ -122,6 +124,22 @@ a:visited {
     height: 25px;
 }
 
+#description {
+    grid-column: 7/-1;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    border: 5px solid #3d3d3d;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#description p {
+    padding: 10px;
+    margin-top: 7%;
+}
+
 /* Main */
 
 #pokemon {
@@ -132,33 +150,69 @@ a:visited {
     height: 100px;
 }
 
+#mudkip {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 #mudkip-div {
     grid-column: 1/4;
     text-align: center;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+#ralts {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 #ralts-div {
     grid-column: 4/7;
     text-align: center;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+#jirachi {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 #jirachi-div {
     grid-column: 7/10;
     text-align: center;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+#skitty {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 #skitty-div {
     grid-column: 10/-1;
     text-align: center;
+    background-color: #fff;
+    border-radius: 100%;
 }
+
+/* dragged pokeball spots */
+
+/* #mudkip-active {
+    grid-column: 1/4;
+    background-color: #3d3d3d;
+    border-radius: 50%;
+    text-align: center;
+} */
+
 
 /* Bag */
 
-/* Feel free to change the measurements if you think something works better! My measurements are just temporary for the time being! */
-
 #bag {
     align-items: flex-start;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 #left-side {
@@ -181,20 +235,7 @@ a:visited {
     height: 50px;
     border: 3px solid #3d3d3d;
     padding: 10px;
-    margin-bottom: 10px;
     margin-top: 10px;
-    border-radius: 5px;
-    background-color: #fff;
-}
-
-#description {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    border: 3px solid #3d3d3d;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 15px;
     border-radius: 5px;
     background-color: #fff;
 }
@@ -203,7 +244,6 @@ a:visited {
     border: 5px solid #3d3d3d;
     border-radius: 10px;
     grid-column: 5/-1;
-    margin-top: 50px;
     padding: 10px;
     background-color: #fff;
 }
@@ -215,7 +255,6 @@ a:visited {
 
 #row1 {
     margin-top: 2.5%;
-    overflow: none;
 }
 
 #row2 {
