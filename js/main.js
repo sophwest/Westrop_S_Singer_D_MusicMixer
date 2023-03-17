@@ -8,6 +8,9 @@ let allBalls = document.querySelectorAll('.ball');
 let allPokemon = document.querySelectorAll ('.pokemon');
 let dragBall = document.querySelectorAll ('#row1 div')
 let dragBall2 = document.querySelectorAll ('#row2 div')
+let playButton = document.querySelector("#play-button");
+let pauseButton = document.querySelector("#pause-button");
+let resetButton = document.querySelector("#reset-button");
 let draggedBall;
 
 //Action
@@ -62,6 +65,24 @@ function handleDrop(e){
     findMatchingAudio();
 }
 
+function playTrack() {
+    let audioClip = document.querySelectorAll('audio[data-key]')[0], 
+    targetDiv = document.querySelectorAll('div[data-key]')[0]; 
+    audioClip.play();
+}
+
+function pauseTrack() {
+    let audioClip = document.querySelectorAll('audio[data-key]')[0], 
+    targetDiv = document.querySelectorAll('div[data-key]')[0];
+    audioClip.pause();
+}
+
+function rewindTrack() {
+    let audioClip = document.querySelectorAll('audio[data-key]')[0], 
+    targetDiv = document.querySelectorAll('div[data-key]')[0];
+    audioClip.currentTime = 0;
+}
+
 //Reaction
 pokemonSprites.forEach(sprite => sprite.addEventListener('click', LogID));
 ballSprites.forEach(ball => ball.addEventListener('click', LogID2));
@@ -74,6 +95,9 @@ allBalls.forEach(svg => svg.addEventListener('transitionend', resetSvgs));
 // allPokemon.forEach (div => div.addEventListener ('transitionend', resetDivs));
 allPokemon.forEach (div => div.addEventListener ('dragover', handleDragOver));
 allPokemon.forEach (div => div.addEventListener ('drop', handleDrop));
+playButton.addEventListener('click', playTrack);
+pauseButton.addEventListener('click', pauseTrack);
+resetButton.addEventListener('click', rewindTrack);
 
 //From my understanding, I'm targeting the ball class that I added to each svg, and when a drop happens, it will play the music that's attached to each datakey. I also included the playing and active classes.
 
@@ -226,3 +250,9 @@ allPokemon.forEach (div => div.addEventListener ('drop', handleDrop));
     
 // let audioClip = document.querySelector('audio[data-key="' + svg.dataset.key + '"]'); 
 // let targetDiv = document.querySelector('div[data-key="' + svg.dataset.key + '"]');
+
+// let audioClip = document.querySelectorAll('audio[data-key]')[${this.dataset.data-key}], 
+//targetDiv = document.querySelectorAll('div[data-key]')[${this.dataset.data-key}];
+
+// let audioClip = document.querySelectorAll('audio[data-key${this.dataset.data-key}]'), 
+//     targetDiv = document.querySelectorAll('div[data-key${this.dataset.data-key}]');
