@@ -30,10 +30,10 @@ function findMatchingAudio(event) {
     targetDiv.classList.add('playing');
 }
 
-// function movePokemon() {
-//     targetDiv = document.querySelector(`svg[data-key="${event.keyCode}"]`);
-//     targetDiv.classList.add('active');
-// }
+function movePokemon() {
+     targetDiv = document.querySelectorAll('.pokemon');
+     targetDiv.forEach(div => div.classList.add('active'));
+}
 
 // function resetDivs() {
 //     this.classList.remove('active');
@@ -57,6 +57,7 @@ function handleDrop(e){
     e.preventDefault();
     console.log ('Dropped on me');
     findMatchingAudio();
+    movePokemon();
 }
 
 function playTrack() {
