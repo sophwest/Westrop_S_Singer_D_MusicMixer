@@ -1,5 +1,9 @@
 /* General Styles */
 
+body {
+    background-image: url(../images/background.png);
+}
+
 .hidden {
     display: none;
 }
@@ -162,6 +166,7 @@ a:visited {
     grid-column: 1/5;
     padding: 20px;
     border-radius: 10px;
+    background-color: #fff;
 }
 
 #bag-pocket-title {
@@ -179,6 +184,7 @@ a:visited {
     margin-bottom: 10px;
     margin-top: 10px;
     border-radius: 5px;
+    background-color: #fff;
 }
 
 #description {
@@ -190,6 +196,7 @@ a:visited {
     padding-left: 5px;
     padding-right: 15px;
     border-radius: 5px;
+    background-color: #fff;
 }
 
 #pokeballs {
@@ -198,6 +205,7 @@ a:visited {
     grid-column: 5/-1;
     margin-top: 50px;
     padding: 10px;
+    background-color: #fff;
 }
 
 #row1, #row2 {
