@@ -10,7 +10,7 @@ let dragBall = document.querySelectorAll ('#row1 div')
 let dragBall2 = document.querySelectorAll ('#row2 div')
 let playButton = document.querySelector("#play-button");
 let pauseButton = document.querySelector("#pause-button");
-let resetButton = document.querySelector("#reset-button");
+// let resetButton = document.querySelector("#reset-button");
 let draggedBall;
 
 //Action
@@ -77,11 +77,11 @@ function pauseTrack() {
     audioClip.pause();
 }
 
-function rewindTrack() {
-    let audioClip = document.querySelectorAll('audio[data-key]')[0], 
-    targetDiv = document.querySelectorAll('div[data-key]')[0];
-    audioClip.currentTime = 0;
-}
+// function rewindTrack() {
+//     let audioClip = document.querySelectorAll('audio[data-key]')[0], 
+//     targetDiv = document.querySelectorAll('div[data-key]')[0];
+//     audioClip.currentTime = 0;
+// }
 
 //Reaction
 pokemonSprites.forEach(sprite => sprite.addEventListener('click', LogID));
@@ -97,7 +97,7 @@ allPokemon.forEach (div => div.addEventListener ('dragover', handleDragOver));
 allPokemon.forEach (div => div.addEventListener ('drop', handleDrop));
 playButton.addEventListener('click', playTrack);
 pauseButton.addEventListener('click', pauseTrack);
-resetButton.addEventListener('click', rewindTrack);
+// resetButton.addEventListener('click', rewindTrack);
 
 //From my understanding, I'm targeting the ball class that I added to each svg, and when a drop happens, it will play the music that's attached to each datakey. I also included the playing and active classes.
 
