@@ -180,19 +180,10 @@
           </svg>
         </div>
 
-      </div>
+        <div class="dropzone">
+        </div>
 
-      <div id="pokeball-display" class="grid">
-        <div id="mudkip-active">
-        </div>
-        <div id="ralts-active">
-        </div>
-        <div id="jirachi-active">
-        </div>
-        <div id="skitty-active">
-        </div>
       </div>
-    </section>
 
     <!-- Getting the area pre-made with easy to code elements -->
 
@@ -213,8 +204,8 @@
             <h2 class="hidden">First Row</h2>
 
             <!-- SW - Added divs around each pokeball in the pokeball selection area, I think this will make things easier for Javascript?  -->
-            <div id="pokeball-div" draggable="true" data-key="004" data-name="Pokeball" class="draggable">
-              <svg class="ball" id="pokeball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
+            <div id="pokeball" draggable="true" data-key="004" data-name="Pokeball" class="draggable">
+              <svg class="ball" id="pokeball-ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                 <defs>
                   <style>
                     .cls-1-pokeball {
@@ -251,8 +242,8 @@
               </svg>
             </div>
 
-            <div id="great-ball-div" draggable="true" data-key="003" data-name="Great Ball" class="draggable">
-              <svg class="ball" id="great-ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
+            <div id="greatball" draggable="true" data-key="003" data-name="Great Ball" class="draggable">
+              <svg class="ball" id="greatball-ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                 <defs>
                   <style>
                     .cls-1-great {
@@ -304,8 +295,8 @@
               </svg>
             </div>
 
-            <div id="ultra-ball-div" draggable="true" data-key="002" data-name="Ultra Ball" class="draggable">
-              <svg class="ball" id="ultra-ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
+            <div id="ultraball" draggable="true" data-key="002" data-name="Ultra Ball" class="draggable">
+              <svg class="ball" id="ultraball-ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                 <defs>
                   <style>
                     .cls-1-ultra {
@@ -352,8 +343,8 @@
               </svg>
             </div>
 
-            <div id="premier-ball-div" draggable="true" data-key="012" data-name="Premier Ball" class="draggable">
-              <svg class="ball" id="premier-ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
+            <div id="premierball" draggable="true" data-key="012" data-name="Premier Ball" class="draggable">
+              <svg class="ball" id="premierball-ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                 <defs>
                   <style>
                     .cls-1-premier {
@@ -390,8 +381,8 @@
               </svg>
             </div>
 
-            <div id="master-ball-div" draggable="true" data-key="001" data-name="Master Ball" class="draggable">
-              <svg class="ball" id="master-ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
+            <div id="masterball" draggable="true" data-key="001" data-name="Master Ball" class="draggable">
+              <svg class="ball" id="masterball-ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                 <defs>
                   <style>
                     .cls-1-master {
@@ -447,8 +438,8 @@
           <section id="row2">
             <h2 class="hidden">Second Row</h2>
 
-            <div id="dusk-ball-div" draggable="true" data-key="013" data-name="Dusk Ball" class="draggable">
-              <svg class="ball" id="dusk-ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
+            <div id="duskball" draggable="true" data-key="013" data-name="Dusk Ball" class="draggable">
+              <svg class="ball" id="duskball-ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                 <defs>
                   <style>
                     .cls-1-dusk {
@@ -499,8 +490,8 @@
                 <path id="darkgray-dusk" class="cls-1-dusk" d="M9.45,56.68v-9.45h9.45v9.45H9.45Zm113.36-18.89v-9.45h-9.45v9.45h9.45Zm-18.89,28.34v-9.45h-9.45v9.45h9.45Zm-9.45,18.89v-9.45h-9.45v9.45h9.45Zm0,28.34h-9.45v9.45h9.45v-9.45Zm-9.45,9.45h-9.45v9.45h9.45v-9.45Zm24.52,0h-9.45v9.45h9.45v-9.45Zm-71.76-9.45h-9.45v9.45h9.45v-9.45Zm66.13,0h-9.45v9.45h9.45v-9.45ZM28.34,28.34h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm0,18.89h-9.45v9.45h9.45v-9.45Zm85.02-18.89h-9.45v9.45h9.45v-9.45Zm-18.89,66.13h-9.45v9.45h9.45v-9.45Zm-66.13-9.45h-9.45v9.45h9.45v-9.45Z"/>
               </svg>
             </div>
-            <div id="quick-ball-div" draggable="true" data-key="015" data-name="Quick Ball" class="draggable">
-              <svg class="ball" id="quick-ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
+            <div id="quickball" draggable="true" data-key="015" data-name="Quick Ball" class="draggable">
+              <svg class="ball" id="quickball-ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                 <defs>
                   <style>
                     .cls-1-quick {
@@ -546,8 +537,8 @@
                 <path id="gold-quick" class="cls-1-quick" d="M18.89,75.57v-9.45h9.45v9.45h-9.45Zm18.89,0v-9.45h-9.45v9.45h9.45Zm85.02-28.34v-9.45h-9.45v9.45h9.45Zm-9.45,9.45v-9.45h-9.45v9.45h9.45Zm-18.89,9.45v-9.45h-9.45v9.45h9.45Zm-9.45,9.45v-9.45h-9.45v9.45h9.45Zm0,9.45v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm-18.89-9.45v-9.45h-9.45v9.45h9.45Zm18.89,37.79h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,9.45h-9.45v9.45h9.45v-9.45Zm-37.79,0h-9.45v9.45h9.45v-9.45Zm-18.89-9.45h-9.45v9.45h9.45v-9.45Zm-9.45-9.45h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm66.13,9.45h-9.45v9.45h9.45v-9.45Zm9.14,0h-9.45v9.45h9.45v-9.45Zm-28.03-56.68h-9.45v9.45h9.45v-9.45Zm-47.23,0h-9.45v9.45h9.45v-9.45Zm66.13-9.45h-9.45v9.45h9.45v-9.45Zm-9.45,56.68h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-18.89-18.89h-9.45v9.45h9.45v-9.45Z"/>
               </svg>
             </div>
-            <div id="dusk-ball-div" draggable="true" data-key="007" data-name="Dive Ball" class="draggable">
-              <svg class="ball" id="dive-ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
+            <div id="diveball" draggable="true" data-key="007" data-name="Dive Ball" class="draggable">
+              <svg class="ball" id="diveball-ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                 <defs>
                   <style>
                     .cls-1-dive {
@@ -583,8 +574,8 @@
                 <path id="darkblue-dive" class="cls-1-dive" d="M122.81,56.68v-9.45h9.45v9.45h-9.45Zm-37.79,28.34v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm9.45-9.45v-9.45h-9.45v9.45h9.45Zm9.45-9.45v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm-9.45,9.45v-9.45h-9.45v9.45h9.45Zm0,18.89h-9.45v9.45h9.45v-9.45Zm9.45-9.45h-9.45v9.45h9.45v-9.45Zm-9.45,18.89h-9.45v9.45h9.45v-9.45Zm-18.89,0h-9.45v9.45h9.45v-9.45Zm-9.45,9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-9.45,9.45h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm-28.34,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-18.89-9.45h-9.45v9.45h9.45v-9.45Zm-9.45-9.45h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm66.13,9.45h-9.45v9.45h9.45v-9.45Zm9.14,0h-9.45v9.45h9.45v-9.45Zm.31-9.45h-9.45v9.45h9.45v-9.45Zm0-9.45h-9.45v9.45h9.45v-9.45Zm-18.89,9.45h-9.45v9.45h9.45v-9.45Zm-18.89,9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm-18.89,0h-9.45v9.45h9.45v-9.45Z"/>
               </svg>
             </div>
-            <div id="friend-ball-div" draggable="true" data-key="497" data-name="Friend Ball" class="draggable">
-              <svg class="ball" id="friend-ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
+            <div id="friendball" draggable="true" data-key="497" data-name="Friend Ball" class="draggable">
+              <svg class="ball" id="friendball-ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                 <defs>
                   <style>
                     .cls-1-friend {
@@ -630,8 +621,8 @@
                 <path id="red-friend" class="cls-7-friend" d="M94.47,66.13v-9.45h9.45v9.45h-9.45Zm0,0v-9.45h-9.45v9.45h9.45Zm-9.45,9.45v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45Zm9.45,0v-9.45h-9.45v9.45h9.45ZM37.79,28.34h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm0,9.45h-9.45v9.45h9.45v-9.45Zm37.79,0h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Zm0-9.45h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm9.45,0h-9.45v9.45h9.45v-9.45Zm0-9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45ZM28.34,47.23h-9.45v9.45h9.45v-9.45Zm9.45,9.45h-9.45v9.45h9.45v-9.45Zm-9.45,0h-9.45v9.45h9.45v-9.45Z"/>
               </svg>
             </div>
-            <div id="dream-ball-div" draggable="true" data-key="240" data-name="Dream Ball" class="draggable">
-              <svg class="ball" id="dream-ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
+            <div id="dreamball" draggable="true" data-key="240" data-name="Dream Ball" class="draggable">
+              <svg class="ball" id="dreamball-ball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                 <defs>
                   <style>
                     .cls-1-dream {
