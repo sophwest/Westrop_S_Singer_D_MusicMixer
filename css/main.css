@@ -19,7 +19,7 @@ body {
 .title {
     grid-column: 1/5;
     font-family: 'Cabin', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     padding-top: 10px;
     padding-bottom: 15px;
@@ -235,9 +235,15 @@ a:visited {
     height: 50px;
     border: 3px solid #3d3d3d;
     padding: 10px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     border-radius: 5px;
     background-color: #fff;
+}
+
+#green-bag {
+    height: 90px;
+    margin-left: 80px;
+    padding-top: 10px;
 }
 
 #pokeballs {
