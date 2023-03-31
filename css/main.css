@@ -160,6 +160,7 @@ a:visited {
     text-align: center;
     background-color: #fff;
     border-radius: 100%;
+    background-repeat: no-repeat;
 }
 
 #ralts {
@@ -172,6 +173,7 @@ a:visited {
     text-align: center;
     background-color: #fff;
     border-radius: 100%;
+    background-repeat: no-repeat;
 }
 
 #jirachi {
@@ -184,6 +186,7 @@ a:visited {
     text-align: center;
     background-color: #fff;
     border-radius: 100%;
+    background-repeat: no-repeat;
 }
 
 #skitty {
@@ -196,6 +199,11 @@ a:visited {
     text-align: center;
     background-color: #fff;
     border-radius: 100%;
+    background-repeat: no-repeat;
+}
+
+.dropzone {
+    display: none;
 }
 
 /* dragged pokeball spots */
