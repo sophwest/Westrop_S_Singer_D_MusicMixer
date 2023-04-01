@@ -1,7 +1,7 @@
 console.log('Welcome to the musical world of Pokemon')
 
 //Target
-let pokemonSprites = document.querySelectorAll ('#pokemon div svg');
+let pokemonSprites = document.querySelectorAll ('#pokemon div img');
 let ballSprites = document.querySelectorAll ('#row1 svg');
 let ballSprites2 = document.querySelectorAll ('#row2 svg');
 let allBalls = document.querySelectorAll('.ball');
@@ -47,6 +47,7 @@ function handleDragOver(e){
 
 function handleDrop(e){
     e.preventDefault();
+    debugger;
     if (this.classList.contains('active')) {
         return; // do nothing if already active
     }
@@ -56,6 +57,7 @@ function handleDrop(e){
     // movePokemon();
     changeBGI(e.currentTarget);
     moveBall();
+    changePokemon(e.target);
 }
 
 function playTrack() {
@@ -79,6 +81,11 @@ function pauseTrack() {
   function moveBall() {
     const dropZone = document.querySelector('.dropzone');
     dropZone.appendChild(draggedBall);
+  }
+
+  function changePokemon(el) {
+    debugger;
+    el.src = `images/drawing-${el.id}.svg`;
   }
 
 //Reaction
