@@ -38,11 +38,6 @@ a:visited {
     color: black
 }
 
-/* Added this for when it's playing */
-.active {
-    transition: all 10px 2s;
-}
-
 /* Grid(s) */
 
 .grid {
@@ -284,4 +279,4 @@ a:visited {
     height: 50px;
 }
 
-/* Footer */
+/* Animation */

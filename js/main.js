@@ -47,7 +47,7 @@ function handleDragOver(e){
 
 function handleDrop(e){
     e.preventDefault();
-    debugger;
+    // debugger;
     if (this.classList.contains('active')) {
         return; // do nothing if already active
     }
@@ -58,6 +58,8 @@ function handleDrop(e){
     changeBGI(e.currentTarget);
     moveBall();
     changePokemon(e.target);
+    pokemonBounce (e.target);
+    // pokeballSpin (e.target);
 }
 
 function playTrack() {
@@ -76,6 +78,8 @@ function pauseTrack() {
     el.style.backgroundImage = `url(images/${draggedBall.id}-full.svg)`;
     el.style.backgroundColor = 'transparent';
     el.style.backgroundPosition = 'center';
+    el.style.backgroundRepeat = 'no-repeat';
+    el.style.backgroundSize = 'contain';
   }
 
   function moveBall() {
@@ -84,8 +88,12 @@ function pauseTrack() {
   }
 
   function changePokemon(el) {
-    debugger;
+    // debugger;
     el.src = `images/drawing-${el.id}.svg`;
+  }
+
+  function pokemonBounce(el) {
+    gsap.to(el, { y: -25, yoyo: true, repeat: -1 });
   }
 
 //Reaction
